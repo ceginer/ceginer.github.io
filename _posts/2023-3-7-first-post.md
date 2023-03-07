@@ -2,7 +2,7 @@
 layout: post
 title: First Post!
 ---
-
+{% raw %}
 # 피로그래밍 배운 것 복습
 
 # 1. Javascript
@@ -318,7 +318,6 @@ urlpatterns = [
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>홈 화면</title>
     </head>
-    {% raw %}
     <body>
         {% for post in posts %}
             <article>
@@ -413,7 +412,7 @@ urlpatterns = [
     ```python
     from django.shortcuts import redirect
     
-    redirect("{url 주소"})
+    redirect("{url 주소}")
     
     redirect('/')
     ```
@@ -518,7 +517,6 @@ urlpatterns = [
        </form>
        <a href="/">Home</a>
     </body>
-    {% endraw %}
     </html> 
     ```
     
@@ -1039,7 +1037,8 @@ http 를 만들었던 주요 인물 중 하나가 HTTP ( **H**yper **T**ext **T*
 이러한 멀티 플랫폼에 대한 지원을 위해 서비스 자원에 대한 아키텍처를 세우고 이용하는 방법을 모색한 결과, REST에 관심을 가지게 되었다.
 > 
 
-  
+{% endraw %}
+
 
 ---
 
