@@ -500,7 +500,7 @@ urlpatterns = [
     </head>
     <body>
        <form action="/update/{{post.id}}" method="post">
-        {% csrf_token %}
+        <!-- {% csrf_token %} -->
             <h2>
                 <input type="text" name="title" placeholder="제목" value="{{post.title}}">
             </h2>
