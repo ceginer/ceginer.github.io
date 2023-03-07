@@ -318,6 +318,7 @@ urlpatterns = [
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>홈 화면</title>
     </head>
+    {% raw %}
     <body>
         {% for post in posts %}
             <article>
@@ -500,7 +501,7 @@ urlpatterns = [
     </head>
     <body>
        <form action="/update/{{post.id}}" method="post">
-        <!-- {% csrf_token %} -->
+        {% csrf_token %}
             <h2>
                 <input type="text" name="title" placeholder="제목" value="{{post.title}}">
             </h2>
@@ -517,6 +518,7 @@ urlpatterns = [
        </form>
        <a href="/">Home</a>
     </body>
+    {% endraw %}
     </html> 
     ```
     
